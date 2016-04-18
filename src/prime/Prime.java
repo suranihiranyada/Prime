@@ -16,15 +16,15 @@ public class Prime {
     }
 
     public int IsPrime(int a){
+        int prime=1;
         for(int j = 2; j<a; j++){
-            if (j%a!=0)
-                return 0;
-            
-            else
-                return 1;
-            
+            if (a%j==0)
+                prime=0;
         }
-        return 0;
+        if(prime==1)
+            return 1;
+        else
+            return 0;
     }
 }
     
